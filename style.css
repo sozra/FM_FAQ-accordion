@@ -1,0 +1,44 @@
+.attribution a {
+  background-color: red;
+}
+
+.accordion-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  padding: 1rem;
+}
+.accordion-head button {
+  background-color: transparent;
+  border-radius: 30%;
+  border: none;
+  font-size: 2.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.accordion-head button::before {
+  content: "+";
+}
+.accordion-head button:focus, .accordion-head button:active {
+  outline: rgb(from color r g b);
+}
+.accordion-head button:hover {
+  scale: 1.2;
+  transform-origin: center;
+}
+.accordion-head.expanded button {
+  scale: 1.2;
+  transform-origin: center;
+}
+.accordion-head.expanded button::before {
+  content: "-";
+}
+.accordion-head.expanded + p {
+  max-height: 100%;
+}
+
+p {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}/*# sourceMappingURL=style.css.map */
